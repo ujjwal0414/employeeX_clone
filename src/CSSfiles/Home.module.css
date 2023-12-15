@@ -1,0 +1,166 @@
+.MainContainer{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(195,225,254);
+    padding-bottom: 2vw;
+    padding-left: 1vw;
+    z-index: -5;
+}
+.SearchBox{
+    min-height: 80vh;
+    width: 86vw;
+    background-color: rgb(227,243,255);
+   margin-top: 14vh;
+    box-shadow: 0px 4px 15px 0px rgb(43, 90, 192);
+    border-radius: 0.8vw;
+    padding-bottom: 2vw;
+}
+.Description{
+    margin-top: 6vh;
+    text-align: center;
+    color: rgb(19,53,127);
+}
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+h1 span{
+    color: rgb(52,116,232);
+}
+h2{
+    font-weight: 600;
+}
+.SearchJobFilter{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    min-height: 5vh;
+    background-color: white;
+    margin-top: 5vh;
+    display: flex;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+    justify-content: space-around;
+    padding: 0.6vw;
+    border-radius: 0.6vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    margin-bottom: 8vh;
+   
+}
+.SearchJobFilter div{
+    width:25vw ;
+    
+}
+.SearchJobFilter div input{
+    border: none;
+    outline: none;
+    border-radius: 0.6vw;
+    height: 6vh;
+    background-color: rgb(249,249,249);
+    padding-left: 3vw;
+    font-size: 1rem;
+}
+.searchfieldJob{
+    width: 21vw;
+    background-color: lightcoral;
+}
+.category{
+    color: rgb(52,116,232);
+}
+.locationField{
+    width: 14vw;
+    margin-right: 1vw;
+}
+::placeholder{
+    
+    color: rgb(147, 147, 147);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+.search{
+    width: 6.6vw;
+    padding: 0.7vw;
+    border: none;
+    border-radius: 0.4vw;
+    background-color: rgb(19,53,127);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+h2{
+    text-align: center;
+    letter-spacing: 1.4px;
+}
+.Cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.explore{
+    margin-bottom: 1.2vw;
+}
+
+@media (max-width:500px){
+    .SearchJobFilter{
+        flex-direction: column;
+        /* visibility: hidden; */
+        width: 82vw;
+        align-items: center;
+        
+        justify-content: space-between;
+       
+    }
+    .SearchBox{
+        
+        width: 90vw;
+        border-radius: 2vw;
+        padding-bottom: 4vw;
+        margin-top: 11vh;
+    }
+    .SearchJobFilter div {
+        width: 78vw;
+       
+    }
+  .searchfieldJob{
+    width: 73vw;
+  }
+  ::placeholder{
+    padding-left: 3vw;
+  }
+  .locationField{
+    width: 45vw;
+    margin-right: 2vw;
+  }
+  
+  .search{
+    width: 25vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    border-radius: 2vw;
+  }
+.SearchJob{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.LocationAndSearch{
+    margin-bottom: 3vw;
+}
+h1{
+    font-size: 2.6rem;
+}
+.findFdream{
+    font-size: 0.9rem;
+    font-weight: 700;
+    width: 60vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.explore{
+    margin-bottom: 4vw;
+}
+
+}

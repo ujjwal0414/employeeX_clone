@@ -1,0 +1,198 @@
+.MainContainer{
+    min-height: 15vh;
+    
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    z-index: 5;
+}
+.NavBox{
+    min-height: 7vh;
+    width: 85vw;
+    background-color: rgba(255, 255, 255, 0.742);
+    border-radius: 0.5vw;
+    display: flex;
+    align-items: center;
+    padding: 0.3vw;
+    backdrop-filter: blur(5px);
+}
+
+.CompanyName{
+    
+    width: 20vw;
+    font-family: sans-serif;
+    font-size:2vw;
+    font-weight: 400;
+    max-height: 5vh;
+    letter-spacing: 1px;
+   color:rgb(21, 62, 133) ;
+    padding-left: 1vw;
+   
+
+}
+.SignUp{
+    width: 8vw;
+     font-weight: 600;
+    font-size: 1.1vw;
+    max-height: 5vh;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.Links{
+    width: 55vw;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+
+}
+a{ cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+a:hover{
+    color: rgb(76, 109, 182);
+}
+.signUpSpan{
+    background-color: rgb(19,53,127);
+    color: white;
+    padding: 0.4vw;
+    border-radius: 0.3vw;
+    padding-top: 0.2vw;
+}
+.ShowBar{
+    display: none;
+}
+.ComNameSideBar{
+    display: none;
+}
+.social{
+    display: none;
+}
+.BlurPage{
+    display: none;
+}
+@media (max-width:500px){
+    .MainContainer{
+        z-index: 7;
+        min-height: 10vh;
+    }
+    .NavBox{
+      
+        min-height: 6vh;
+        width: 90vw;
+        border-radius: 2vw;
+        
+    }
+    .Links{
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        width: 80vw;
+        background-color: rgb(180, 197, 210);
+        left: -5vw;
+        top: -2vh;
+        height: 100vh;
+        justify-content: flex-start;
+       transition: 1s;
+       z-index: 10;
+    }
+    .showSideBar{
+        left:-100%;
+        transition: 1s;
+    }
+    .CompanyName{
+       
+        width: 55vw;
+        font-size: 5vw;
+
+    }
+    .ShowBar{
+        display: block;
+        margin-left: 4vw;
+        margin-right: 2vw;
+    }
+    .SignUp{
+        float: right;
+        
+        width: 20vw;
+        font-size: 4vw;
+    }.signUpSpan{
+        padding: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        border-radius: 1vw;
+
+    }
+    a{
+        font-size: 4vw;
+    }
+    .Links div{
+        margin-left: 8vw;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .ComNameSideBar{
+       display: block;
+       width: 72vw;
+       font-family: sans-serif;
+       font-size:5vw;
+       font-weight: 600;
+       letter-spacing: 1px;
+       color:rgb(21, 62, 133) ;
+       transition: 1s;
+      
+    }
+   
+    .social{
+        display: block;
+        width: 72vw;
+        height: 10vh;
+        position: absolute;
+        bottom:10vh;
+        text-align: center;
+       left: -8vw;
+        margin-left: -10vw;
+    }
+    .social p{
+        font-size: 3.5vw;
+        letter-spacing: 0.4px;
+        font-weight: 600;
+       
+    }
+    .socialIcons{
+        display: flex;
+       
+       text-align: center;
+        width: 72vw;
+        margin-left: 5vw;
+    }
+    .socialLogo{
+        font-size: 5vw;
+        
+       
+    }
+    .closeBar{
+        float: right;
+        margin-right: 4vw;
+        font-size: 6vw;
+        font-weight: 900;
+    }
+    .BlurPage{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        background-color: rgba(173, 216, 230, 0.584);
+        backdrop-filter: blur(5px);
+    }
+}

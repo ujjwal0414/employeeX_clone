@@ -1,0 +1,143 @@
+.container{
+    min-height: 40vh;
+    
+    width: 100vw;
+    background: linear-gradient(to bottom,rgb(23,61,142),rgb(52,115,231));
+    display: flex;
+
+}
+.HowItWorks{
+    width: 40vw;
+    min-height: 20vh;
+    color: white;
+    text-align: center;
+}
+.steps{
+    width: 60vw;
+    min-width: 20vh;
+   
+    display: flex;
+    align-items: center;
+    
+}
+.stepBox{
+    width: 12vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1vw;
+    
+}
+.stepBox:hover p{
+    cursor: pointer;
+    color: white;
+}
+.stepBox p{
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    color: rgb(179, 177, 177);
+    transition: 0.5s;
+    font-weight: 600;
+}
+.stepBox p:hover
+{
+    color: white;
+}
+.Logo{
+    transform: scale(5);
+}
+.Title{
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.Desc{
+    width: 30vw;
+    min-width: none;
+    min-height: 5vh;
+    
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5vh;
+}
+h2{
+    margin-top: 2vw;
+}
+.HoveredDesc{
+    display: none;
+}
+.downarrow{
+    display: none;
+}
+.noshowdesc{
+    display: none;
+}
+@media (max-width:500px){
+    .HowItWorks{
+        margin-top: 6vw;
+        width: 100vw;
+        text-align: center;
+        min-height: 5vh;
+    }
+   .container{
+    flex-direction: column;
+   }
+   .Desc{
+    display: none;
+   }
+   .steps{
+  
+    width: 100vw;
+    flex-direction: column;
+   }
+   .stepBox p{
+    color: white;
+    font-size: 5vw;
+    font-weight: 600;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+   }
+   .stepBox{
+    width: 100vw;
+    position: relative;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    min-height: 15vh;
+    transition: 0.5s;
+    
+   }
+   .hidestepBox{
+    visibility: hidden;
+    transition: 0.5s;
+   }
+   .noshowdesc{
+    display: none;
+    transition: 0.5s;
+   }
+   .downarrow{
+    display: block;
+   transform: scale(2);
+   font-weight: 300;
+    color: white;
+   }
+   .HoveredDesc{
+    display: block;
+    position: absolute;
+    top: 0px;
+    padding: 1vw;
+    width: 50vw;
+    text-align: center;
+    min-height: 15vh;
+    border: 2px solid white;
+    z-index: 1;
+    border-radius: 2vw;
+    transition: 0.5s;
+   }
+   .HoveredDesc p{
+    font-weight: 100;
+    font-size: 3vw;
+   }
+   .container{
+    padding-bottom: 4vw;
+   }
+}

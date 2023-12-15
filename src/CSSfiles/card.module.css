@@ -1,0 +1,54 @@
+.CardContainer{
+    width: 70vw;
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: 16vw 16vw 16vw 16vw;
+   grid-column-gap:2.5vw;
+   grid-row-gap:1vw;
+}
+.cardBox{
+    display: flex;
+    width: 16vw;
+    background-color: rgb(255, 255, 255);
+    padding: 0.8vw;
+    align-items: center;
+    border-radius: 0.6vw;
+    
+}
+.Icon{
+    background-color: rgb(231,240,250);
+    padding: 0.6vw;
+    border-radius: 0.5vw;
+    color: rgb(10,101,204);
+}
+.Desc{
+    margin-left: 1vw;
+
+}
+.title{
+    color: rgb(42,73,140);
+    font-weight: 700;
+}
+.positionNos{
+    font-weight: 200;
+}
+@media(max-width:500px){
+    .CardContainer{
+        width: 80vw;
+        grid-template-columns: 77vw;
+    }
+    .cardBox{
+        width: 77vw;
+       padding-top: 3vw;
+       padding-bottom: 3vw;
+       padding-left: 3vw;
+       border-radius: 2vw;
+    }
+    .Icon{
+       padding: 1.5vw;
+       border-radius: 2vw;
+    }
+    .Desc{
+        margin-left: 3vw;
+    }
+}
